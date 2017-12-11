@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <h1> Cost of Production Tool </h1>
+  <h2> Stage 2 - Sheep Trading Account </h2>
+  <table border="2" class="STA">
+    <tr>
+      <th> Q1 </th>
+      <th colspan="7"> For the chosen finacial year, what were the Opening and Closing stock numbers for sheep? How many of each class were sold or purchased? </th>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="font-style:italic;"> Catergory </td>
+      <td style="font-style:italic;"> Opening Number </td>
+      <td style="font-style:italic;"> No. sold or transferred </td>
+      <td style="font-style:italic;"> No. purchased </td>
+      <td style="font-style:italic;"> Closing Number </td>
+      <td width="100px"> </td>
+      <td style="font-style:italic;"> Natural Increase </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td> Ewes </td>
+      <td> <input type="number" name="openingewes" id="openingewes" > </td>
+      <td> <input type="number" name="nosoldtransewes" id="nosoldtransewes" > </td>
+      <td> <input type="number" name="nopurchewes" id="nopurchewes" > </td>
+      <td> <input type="number" name="closingewes" id="closingewes" oninput="calculateewes()"> </td>
+      <td width="100px"> </td>
+      <td> <output type="number" name="natincewes" id="natincewes" > </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td> Wethers </td>
+      <td> <input type="number" name="openingwethers" id="openingwethers"> </td>
+      <td> <input type="number" name="nosoldtranswethers" id="nosoldtranswethers"> </td>
+      <td> <input type="number" name="nopurchwethers" id="nopurchwethers"> </td>
+      <td> <input type="number" name="closingwethers" id="closingwethers" oninput="calculatewethers()"> </td>
+      <td width="100px"> </td>
+      <td> <output type="number" name="natincwethers" id="natincwethers"> </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td> Rams </td>
+      <td> <input type="number" name="openingrams"> </td>
+      <td> <input type="number" name="nosoldtransrams"> </td>
+      <td> <input type="number" name="nopurchrams"> </td>
+      <td> <input type="number" name="closingrams"> </td>
+      <td width="100px"> </td>
+      <td> <output type="number" name="natincrams"> </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td> Lambs </td>
+      <td> <input type="number" name="openinglambs"> </td>
+      <td> <input type="number" name="nosoldtranslambs"> </td>
+      <td> <input type="number" name="nopurchlambs"> </td>
+      <td> <input type="number" name="closinglambs"> </td>
+      <td width="100px"> </td>
+      <td> <output type="number" name="natinclambs"> </td>
+    </tr>
+
+  </table>
+  <br>
+  <table border="2" class="STA">
+    <tr>
+      <th> Q2 </th>
+      <th colspan="7"> For the stock trading numbers, what were the approximate weight of the stock at the start of year, traded date, and end of year? </th>
+    </tr>
+    <tr>
+      <td></td>
+      <td style="font-style:italic;"> Weight </td>
+      <td style="font-style:italic;"> Opening (kg/hd) </td>
+      <td style="font-style:italic;"> Sold (kg/hd) </td>
+      <td style="font-style:italic;"> Purchased (kg/hd) </td>
+      <td style="font-style:italic;"> Closing (kg/hd) </td>
+      <td width="100px"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td> Ewes </td>
+      <td> <form> <input type="number" name="openingkghdewes"> </form> </td>
+      <td> <form> <input type="number" name="nosoldtranskghdewes"> </form> </td>
+      <td> <form> <input type="number" name="nopurchkghdewes"> </form> </td>
+      <td> <form> <input type="number" name="closingkghdewes"> </form> </td>
+      <td width="100px"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td> Wethers </td>
+      <td> <form> <input type="number" name="openingkghdwethers"> </form> </td>
+      <td> <form> <input type="number" name="nosoldtranskghdwethers"> </form> </td>
+      <td> <form> <input type="number" name="nopurchkghdwethers"> </form> </td>
+      <td> <form> <input type="number" name="closingkghdwethers"> </form> </td>
+      <td width="100px"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td> Rams </td>
+      <td> <form> <input type="number" name="openingkghdrams"> </form> </td>
+      <td> <form> <input type="number" name="nosoldtranskghdrams"> </form> </td>
+      <td> <form> <input type="number" name="nopurchkghdrams"> </form> </td>
+      <td> <form> <input type="number" name="closingkghdrams"> </form> </td>
+      <td width="100px"> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td> Lambs </td>
+      <td> <form> <input type="number" name="openingkghdlambs"> </form> </td>
+      <td> <form> <input type="number" name="nosoldtranskghdlambs"> </form> </td>
+      <td> <form> <input type="number" name="nopurchkghdlambs"> </form> </td>
+      <td> <form> <input type="number" name="closingkghdlambs"> </form> </td>
+      <td width="100px"> </td>
+      <td>  </td>
+    </tr>
+  </table>
+</body>

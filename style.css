@@ -1,0 +1,10 @@
+
+tr, td:first-child {
+  border: none;
+}
+
+table.SDA td {
+    -webkit-column-width: 100px; /* Chrome, Safari, Opera */
+    -moz-column-width: 100px; /* Firefox */
+    width: 100px;
+}
