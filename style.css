@@ -1,10 +1,30 @@
-
-tr, td:first-child {
-  border: none;
+#table1 tr th {
+    text-align: center;
 }
 
-table.SDA td {
-    -webkit-column-width: 100px; /* Chrome, Safari, Opera */
-    -moz-column-width: 100px; /* Firefox */
-    width: 100px;
+#table1 tr td, input, output {
+    text-align: center;
+}
+
+#table1 tr td input, output {
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+#table1  {
+    table-layout: fixed;
+    width:80%;
+    margin-left: 10% ;
+    margin-right: 10% ;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
 }
