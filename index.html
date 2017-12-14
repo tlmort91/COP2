@@ -160,18 +160,18 @@
                   </tr>
                   <tr >
                     <td> Rams </td>
-                    <td> <input class="form-control" type="number" name="openingrams"> </td>
-                    <td> <input class="form-control" type="number" name="nosoldtransrams"> </td>
-                    <td> <input class="form-control" type="number" name="nopurchrams"> </td>
-                    <td> <input class="form-control" type="number" name="closingrams"> </td>
+                    <td> <input class="form-control" type="number" name="openingrams" id="openingrams"> </td>
+                    <td> <input class="form-control" type="number" name="nosoldtransrams" id="nosoldtransrams"> </td>
+                    <td> <input class="form-control" type="number" name="nopurchrams" id="nopurchrams"> </td>
+                    <td> <input class="form-control" type="number" name="closingrams" id="closingrams"> </td>
                     <td> <output type="number" name="natincrams"> </td>
                   </tr>
                   <tr >
                     <td> Lambs </td>
-                    <td> <input class="form-control" type="number" name="openinglambs"> </td>
-                    <td> <input class="form-control" type="number" name="nosoldtranslambs"> </td>
-                    <td> <input class="form-control" type="number" name="nopurchlambs"> </td>
-                    <td> <input class="form-control" type="number" name="closinglambs"> </td>
+                    <td> <input class="form-control" type="number" name="openinglambs" id="openinglambs"> </td>
+                    <td> <input class="form-control" type="number" name="nosoldtranslambs" id="nosoldtranslambs"> </td>
+                    <td> <input class="form-control" type="number" name="nopurchlambs" id="nopurchlambs"> </td>
+                    <td> <input class="form-control" type="number" name="closinglambs" id="closinglambs"> </td>
                     <td> <output type="number" name="natinclambs"> </td>
                   </tr>
                 </table>
@@ -181,46 +181,85 @@
         <p> Q2. For the stock trading numbers, what were the approximate weight of the stock at the start of year, traded date, and end of year? </p>
           <form class="form-horizontal" >
             <div class="table-responsive">
-              <table id="table1" class="table-sm">
+              <table id="table1" class="table">
+                <tr>
+                  <th > </th>
+                  <th > Opening (kg/hd) </th>
+                  <th > Sold (kg/hd) </th>
+                  <th > Purchased (kg/hd) </th>
+                  <th > Closing (kg/hd) </th>
+                </tr>
+                <tr>
+                  <td> Ewes </td>
+                  <td> <input class="form-control" type="number" name="openingkghdewes" id="openingkghdewes"> </td>
+                  <td> <input class="form-control" type="number" name="nosoldtranskghdewes" id="nosoldtranskghdewes"> </td>
+                  <td> <input class="form-control" type="number" name="nopurchkghdewes" id="nopurchkghdewes"> </td>
+                  <td> <input class="form-control" type="number" name="closingkghdewes" id="closingkghdewes"> </td>
+                </tr>
+                <tr>
+                  <td> Wethers </td>
+                  <td> <input class="form-control" type="number" name="openingkghdwethers" id="openingkghdwethers"> </td>
+                  <td> <input class="form-control" type="number" name="nosoldtranskghdwethers" id="nosoldtranskghdwethers"> </td>
+                  <td> <input class="form-control" type="number" name="nopurchkghdwethers" id="nopurchkghdwethers"> </td>
+                  <td> <input class="form-control" type="number" name="closingkghdwethers" id="closingkghdwethers"> </td>
+                </tr>
+                <tr>
+                  <td> Rams </td>
+                  <td> <input class="form-control" type="number" name="openingkghdrams" id="openingkghdrams"> </td>
+                  <td> <input class="form-control" type="number" name="nosoldtranskghdrams" id="nosoldtranskghdrams"> </td>
+                  <td> <input class="form-control" type="number" name="nopurchkghdrams" id="nopurchkghdrams"> </td>
+                  <td> <input class="form-control" type="number" name="closingkghdrams" id="closingkghdrams"> </td>
+                </tr>
+                <tr>
+                  <td> Lambs </td>
+                  <td> <input class="form-control" type="number" name="openingkghdlambs" id="openingkghdlambs"> </td>
+                  <td> <input class="form-control" type="number" name="nosoldtranskghdlambs" id="nosoldtranskghdlambs"> </td>
+                  <td> <input class="form-control" type="number" name="nopurchkghdlambs" id="nopurchkghdlambs"> </td>
+                  <td> <input class="form-control" type="number" name="closingkghdlambs" id="closingkghdlambs"> </td>
+                </tr>
+              </table>
+            </div>
+          </form>
+        <p>Calculation - Using the numbers given above, the following numbers are calculated and the total kgs of liveweight produced is calculated at the bottom. </p>
+          <div class="table-responsive">
+            <table id="table1" class="table">
               <tr>
                 <th > </th>
-                <th > Opening (kg/hd) </th>
-                <th > Sold (kg/hd) </th>
-                <th > Purchased (kg/hd) </th>
-                <th > Closing (kg/hd) </th>
+                <th > Opening (kgs) </th>
+                <th > Sold (kgs) </th>
+                <th > Purchased (kgs) </th>
+                <th > Closing (kgs) </th>
               </tr>
               <tr>
                 <td> Ewes </td>
-                <td> <input type="number" name="openingkghdewes"> </td>
-                <td> <input type="number" name="nosoldtranskghdewes"> </td>
-                <td> <input type="number" name="nopurchkghdewes"> </td>
-                <td> <input type="number" name="closingkghdewes"> </td>
+                <td> <output type="number" name="openingkghdewes" id="openingkghdewes"> </td>
+                <td> <output type="number" name="nosoldtranskghdewes" id="nosoldtranskghdewes"> </td>
+                <td> <output type="number" name="nopurchkghdewes" id="nopurchkghdewes"> </td>
+                <td> <output type="number" name="closingkghdewes" id="closingkghdewes"> </td>
               </tr>
               <tr>
                 <td> Wethers </td>
-                <td> <form> <input type="number" name="openingkghdwethers"> </form> </td>
-                <td> <form> <input type="number" name="nosoldtranskghdwethers"> </form> </td>
-                <td> <form> <input type="number" name="nopurchkghdwethers"> </form> </td>
-                <td> <form> <input type="number" name="closingkghdwethers"> </form> </td>
+                <td> <input class="form-control" type="number" name="openingkghdwethers" id="openingkghdwethers"> </td>
+                <td> <input class="form-control" type="number" name="nosoldtranskghdwethers" id="nosoldtranskghdwethers"> </td>
+                <td> <input class="form-control" type="number" name="nopurchkghdwethers" id="nopurchkghdwethers"> </td>
+                <td> <input class="form-control" type="number" name="closingkghdwethers" id="closingkghdwethers"> </td>
               </tr>
               <tr>
                 <td> Rams </td>
-                <td> <form> <input type="number" name="openingkghdrams"> </form> </td>
-                <td> <form> <input type="number" name="nosoldtranskghdrams"> </form> </td>
-                <td> <form> <input type="number" name="nopurchkghdrams"> </form> </td>
-                <td> <form> <input type="number" name="closingkghdrams"> </form> </td>
+                <td> <input class="form-control" type="number" name="openingkghdrams" id="openingkghdrams"> </td>
+                <td> <input class="form-control" type="number" name="nosoldtranskghdrams" id="nosoldtranskghdrams"> </td>
+                <td> <input class="form-control" type="number" name="nopurchkghdrams" id="nopurchkghdrams"> </td>
+                <td> <input class="form-control" type="number" name="closingkghdrams" id="closingkghdrams"> </td>
               </tr>
               <tr>
                 <td> Lambs </td>
-                <td> <form> <input type="number" name="openingkghdlambs"> </form> </td>
-                <td> <form> <input type="number" name="nosoldtranskghdlambs"> </form> </td>
-                <td> <form> <input type="number" name="nopurchkghdlambs"> </form> </td>
-                <td> <form> <input type="number" name="closingkghdlambs"> </form> </td>
+                <td> <input class="form-control" type="number" name="openingkghdlambs" id="openingkghdlambs"> </td>
+                <td> <input class="form-control" type="number" name="nosoldtranskghdlambs" id="nosoldtranskghdlambs"> </td>
+                <td> <input class="form-control" type="number" name="nopurchkghdlambs" id="nopurchkghdlambs"> </td>
+                <td> <input class="form-control" type="number" name="closingkghdlambs" id="closingkghdlambs"> </td>
               </tr>
             </table>
-            </div>
-          </form>
-
+          </div>
       </div>
     </div>
   </div>
